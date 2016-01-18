@@ -4,6 +4,9 @@ configuration AddLocalUserAcct
     (        
         [Parameter(Mandatory=$true)]
         [ValidateNotNullOrEmpty()]
+        [System.Management.Automation.PSCredential]$AdminCredentials
+        [Parameter(Mandatory=$true)]
+        [ValidateNotNullOrEmpty()]
         [System.Management.Automation.PSCredential]$UserCredentials
     )
     
